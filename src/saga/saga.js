@@ -17,8 +17,7 @@ function* loginAuth(action) {
   
 }
 
-function* mySaga() {
+export function* mySaga() {
   yield takeEvery(LOGIN_START_ACTION, loginAuth);
 }
 
-export default mySaga;
