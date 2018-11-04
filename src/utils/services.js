@@ -22,3 +22,17 @@ export const userLoginApi = ({username, password}) => {
         }
     })
 }
+
+export const dynamicPostAPI = ({url, body}) => {
+    console.log(url, body)
+    return createRequest({
+        requestType: "POST",
+        url: url,
+        body: {
+           ...body
+        },
+        header: {
+            ...createBaseHeader()
+        }
+    })
+}

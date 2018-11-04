@@ -13,6 +13,7 @@ import { SimpleLineChart } from '../../Components/Utils/Chart';
 import { Page404 } from '../../Components/Utils/404';
 import './App.css'
 import { logoutAction } from '../../redux/actions';
+import { DynamicComponent } from '../initPage';
 
 class App extends React.Component {
 
@@ -43,6 +44,7 @@ class App extends React.Component {
                         {/* <Route path="/" component={SignIn} exact={true}/> */}
                         <Route path="/login" component={SignIn} exact={true}/>
                         <Route path="/chart" component={SimpleLineChart} exact={true} />
+                        <Route path="/dynamic" component={DynamicComponent} exact={true}/>
                         <PrivateRoute path="/" Component={() => this.mainPage(header)} isLogged={isLogged} />
                         <Route path="**" component={Page404} exact={true} />
                     </Switch>

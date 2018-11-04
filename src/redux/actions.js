@@ -8,8 +8,19 @@ import {
     SET_PAGE_HEADER_ACTION,
     SET_PAGE_TITLE_ACTION,
     LOGOUT_ACTION,
+    INIT_PAGE_ACTION,
+    DYNAMIC_SUBMIT_ACTION
 } from './constain';
 
+export const initPageAction = (init) => ({
+    type: INIT_PAGE_ACTION,
+    payload: init
+})
+
+export const dynamicSubmitAction = (body, url) => ({
+    type: DYNAMIC_SUBMIT_ACTION,
+    payload: {body: body, url: url}
+})
 
 export const loginStartAction = (username, password) => ({
     type: LOGIN_START_ACTION,

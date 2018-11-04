@@ -28,8 +28,8 @@ export const createRequest = ({requestType = "POST", url = "http://localhost" , 
             method: requestType, // *GET, POST, PUT, DELETE, etc.
             headers: {
                 ...optionalHeaders(),
-                // "Content-Type": "application/x-www-form-urlencoded",
                 ...header,
+                // "Content-Type": "application/x-www-form-urlencoded",
             },
             body: JSON.stringify(body), // body data type must match "Content-Type" header
             // mode: "cors", // no-cors, cors, *same-origin

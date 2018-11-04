@@ -31,7 +31,7 @@ class SignInForm extends React.Component {
 
     componentDidUpdate() {
         if(this.props.isLogged) {
-            this.props.history.push('/home');
+            this.props.history.push('/dynamic');
         }
     }
 

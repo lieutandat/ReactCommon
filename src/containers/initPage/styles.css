@@ -1,0 +1,23 @@
+.main-page {
+    margin-top: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.component {
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 100%;
+}
+ input[type="checkbox" i].component {
+    margin-left: calc(-50% + 6px);
+}
+.footer{
+    padding-top: 10px;
+    width: 100vw;
+    margin: auto;
+    text-align: center
+}
